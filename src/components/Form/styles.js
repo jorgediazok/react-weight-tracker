@@ -12,17 +12,9 @@ export default makeStyles((theme) => ({
     display: 'grid',
     gridTemplateColumns: '1fr 1fr',
   },
-  closeBtn: {
-    position: 'absolute',
-    top: '2%',
-    right: '3%',
-    fontSize: '1.5rem',
-    zIndex: 1,
-    color: '#fff',
-    cursor: 'pointer',
-  },
+
   contentLeft: {
-    backgroundColor: 'white',
+    backgroundColor: '#fff',
     borderRadius: '10px 0 0 10px',
     position: 'relative',
   },
@@ -72,7 +64,7 @@ export default makeStyles((theme) => ({
   formInputsP: {
     fontSize: '0.8rem',
     marginTop: '0.5rem',
-    color: '#f00e0e',
+    color: '#846F75',
   },
   formLabel: {
     display: 'inline-block',
@@ -80,7 +72,6 @@ export default makeStyles((theme) => ({
     marginBottom: '6px',
     color: '#846F75',
   },
-  formInputPlaceholder: {},
   formInput: {
     display: 'block',
     paddingLeft: '10px',
@@ -90,7 +81,7 @@ export default makeStyles((theme) => ({
     width: '100%',
     border: 'none',
     '&::placeholder': {
-      color: '#595959',
+      color: '#',
       fontSize: '12px',
     },
     '&:focus::placeholder': {
