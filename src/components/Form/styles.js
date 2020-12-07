@@ -2,21 +2,22 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles((theme) => ({
   formContainer: {
-    margin: '100px auto',
-    width: '1000px',
+    margin: '3rem auto',
+    width: '70%',
     boxShadow:
       '0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2)',
-    position: 'relative',
     borderRadius: '10px',
-    height: '610px',
+    height: '510px',
     display: 'grid',
     gridTemplateColumns: '1fr 1fr',
+    [theme.breakpoints.down('xs')]: {},
   },
 
   contentLeft: {
     backgroundColor: '#fff',
     borderRadius: '10px 0 0 10px',
     position: 'relative',
+    [theme.breakpoints.down('xs')]: {},
   },
   formImg: {
     width: '60%',

@@ -46,7 +46,7 @@ const FormInputs = () => {
         </div>
         <div className={classes.formInputs}>
           <label htmlFor="password2" className={classes.formLabel}>
-            Confirm your Password
+            Confirm Password
           </label>
           <input
             id="password2"
