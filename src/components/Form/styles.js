@@ -56,10 +56,11 @@ export default makeStyles((theme) => ({
     textAlign: 'center',
     width: '80%',
     marginBottom: '1rem',
+    marginTop: '-1.8rem',
     color: '#846F75',
   },
   formInputs: {
-    marginBottom: '0.5rem',
+    marginBottom: '0.8rem',
     width: '80%',
   },
   formInputsP: {
@@ -92,9 +93,10 @@ export default makeStyles((theme) => ({
     },
   },
   formInputBtn: {
-    width: '80%',
+    width: '83%',
     height: '50px',
-    marginTop: '10px',
+    marginTop: '15px',
+    marginLeft: '14px',
     borderRadius: '2px',
     background: '#846F75',
     outline: 'none',
