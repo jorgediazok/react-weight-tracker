@@ -39,6 +39,9 @@ export default makeStyles((theme) => ({
     position: 'relative',
     background: '#F9B087',
   },
+  loginGoogleButton: {
+    marginTop: '2rem',
+  },
   form: {
     position: 'absolute',
     top: '50%',

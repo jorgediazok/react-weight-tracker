@@ -1,5 +1,12 @@
 import React from 'react';
+import { GoogleLogin } from 'react-google-login';
 import useStyles from './styles';
+
+const responseGoogle = (response) => {
+  console.log(response);
+};
+
+const key = process.env.REACT_APP_AUTH_KEY;
 
 const FormInputs = () => {
   const classes = useStyles();
@@ -7,27 +14,26 @@ const FormInputs = () => {
   return (
     <div className={classes.contentRight}>
       <form className={classes.form}>
-        <h1 className={classes.formTitle}>SIGN UP</h1>
         <div className={classes.formInputs}>
-          <label htmlFor="password" className={classes.formLabel}>
+          <label htmlFor="height" className={classes.formLabel}>
             Height
           </label>
           <input
-            id="password"
-            type="password"
-            name="password"
+            id="height"
+            type="text"
+            name="height"
             className={classes.formInput}
             placeholder="Enter your Height"
           />
         </div>
         <div className={classes.formInputs}>
-          <label htmlFor="password2" className={classes.formLabel}>
+          <label htmlFor="weight" className={classes.formLabel}>
             Weight
           </label>
           <input
-            id="password2"
-            type="password"
-            name="password2"
+            id="weight"
+            type="text"
+            name="weight"
             className={classes.formInput}
             placeholder="Enter your Weight"
           />
@@ -35,6 +41,12 @@ const FormInputs = () => {
         <button className={classes.formInputBtn} type="submit">
           Submit
         </button>
+        <GoogleLogin
+          className={classes.loginGoogleButton}
+          clientId={key}
+          onSuccess={responseGoogle}
+          onFailure={responseGoogle}
+        />
       </form>
     </div>
   );
